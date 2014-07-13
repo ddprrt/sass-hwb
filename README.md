@@ -3,11 +3,11 @@ sass-hwb
 
 A Sass function for the HWB color model
 
-# Introduction
+## Introduction
 
 The HWB color model is coming to CSS, and you can use it right now with Sass. Read more about the HWB model [here](http://fettblog.eu/hwb-colors/) and at the [W3C working draft for the CSS color module, level 4](http://dev.w3.org/csswg/css-color/#the-hwb-notation).
 
-# Installation
+## Installation
 
 Install it with [bower](http://bower.io) or download the `_hwb.scss` file from this repository.
 
@@ -34,6 +34,6 @@ body {
 
 Enjoy!
 
-# Demo
+## Demo
 
 Try it at [Codepen](http://codepen.io/ddprrt/pen/Gxrwd)
