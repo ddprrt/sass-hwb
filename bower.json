@@ -1,0 +1,28 @@
+{
+  "name": "sass-hwb",
+  "version": "0.0.1",
+  "homepage": "https://github.com/ddprrt/sass-hwb",
+  "authors": [
+    "Stefan Baumgartner <sbaumg@gmail.com>"
+  ],
+  "description": "A Sass function for HWB colors",
+  "main": "src/_hwb.scss",
+  "keywords": [
+    "Sass",
+    "HWB",
+    "colors",
+    "hue",
+    "blackness",
+    "whiteness",
+    "hwb",
+    "hwba"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
