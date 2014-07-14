@@ -1,4 +1,4 @@
-@function xx-hueToRgb($t1, $t2, $hue) {
+/*@function xx-hueToRgb($t1, $t2, $hue) {
   @if($hue < 0) { $hue : $hue + 6; }
   @if($hue >= 6) { $hue : $hue - 6; }
 
@@ -44,6 +44,30 @@
   $b: (($b * (1 - $w - $k)) + $w) * 255;
   
   @return rgb($r, $g, $b);
+}*/
+
+@function xx-applyWB($col, $w, $b) {
+  $col: $col / 255;
+  @return floor(($col * (1 - $w - $b) + $w) * 255);
+}
+
+@function hwb($hue, $w, $b) {
+  
+  $base: hsl($hue, 100%, 50%);
+  @if(unit($w) == "%") { $w: $w / 100% } @else { $w: $w / 100 };
+  @if(unit($b) == "%") { $b: $b / 100% } @else { $b: $b / 100 };
+  
+  @if($w + $b > 1) {
+    $rat: $w + $b;
+    $w: $w / $rat;
+    $b: $b / $rat;
+  }
+  
+  @return rgb(
+    xx-applyWB(red($base), $w, $b),
+    xx-applyWB(green($base), $w, $b),
+    xx-applyWB(blue($base), $w, $b)
+  );
 }
 
 @function hwba($h, $w, $b, $a) {

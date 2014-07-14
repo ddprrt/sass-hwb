@@ -1,14 +1,14 @@
 @include describe("sass-hwb") {
   @include it("should convert hwba to rgba") {
-    @include should( expect( hwba(90deg, 0, 0, 0.5) ), to( be( rgba(127, 255, 0, 0.5) ) ) );
+    @include should( expect( hwba(90deg, 0, 0, 0.5) ), to( be( rgba(128, 255, 0, 0.5) ) ) );
   }
 
   @include it("should convert hwb to hex") {
-    @include should( expect( hwb(190deg, 0.5, 0) ), to( be( #7fe9ff ) ) );
+    @include should( expect( hwb(190deg, 50%, 0) ), to( be( #7fe9ff ) ) );
   }
 
   @include it("should accept numbers for hue and not only degrees") {
-    @include should( expect( hwb(30, 0, 0) ), to( be( #ff7f00 ) ) );
+    @include should( expect( hwb(30, 0, 0) ), to( be( #ff8000 ) ) );
   }
 
   @include it("should be gray with w+b at 50%") {
