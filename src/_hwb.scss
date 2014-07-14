@@ -3,7 +3,7 @@
   @return round(($col * (1 - $w - $b) + $w) * 255);
 }
 
-@function hwb($hue, $w, $b) {
+@function hwb($hue, $w, $b, $alpha: 1) {
   
   $base: hsl($hue, 100%, 50%);
   @if(unit($w) == "%") { $w: $w / 100% } @else { $w: $w / 100 };
@@ -15,13 +15,10 @@
     $b: $b / $rat;
   }
   
-  @return rgb(
+  @return rgba(
     xx-applyWB(red($base), $w, $b),
     xx-applyWB(green($base), $w, $b),
-    xx-applyWB(blue($base), $w, $b)
+    xx-applyWB(blue($base), $w, $b),
+    $alpha
   );
-}
-
-@function hwba($h, $w, $b, $a) {
-  @return rgba(hwb($h, $w, $b), $a);
 }

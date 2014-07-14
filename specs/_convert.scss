@@ -1,6 +1,6 @@
 @include describe("sass-hwb") {
-  @include it("should convert hwba to rgba") {
-    @include should( expect( hwba(90deg, 0, 0, 0.5) ), to( be( rgba(128, 255, 0, 0.5) ) ) );
+  @include it("should convert hwb to rgba") {
+    @include should( expect( hwb(90deg, 0, 0, 0.5) ), to( be( rgba(128, 255, 0, 0.5) ) ) );
   }
 
   @include it("should convert hwb to hex") {
@@ -117,6 +117,5 @@
     @include should( expect( hwb(120, 100%,  60%) ), to( be( #9f9f9f ) ) );
     @include should( expect( hwb(120, 100%,  80%) ), to( be( #8e8e8e ) ) );
     @include should( expect( hwb(120, 100%, 100%) ), to( be( gray    ) ) );
-
   }
 }
