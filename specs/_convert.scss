@@ -10,4 +10,16 @@
   @include it("should accept numbers for hue and not only degrees") {
   	@include should( expect( hwb(30, 0, 0) ), to( be( #ff7f00 ) ) );
   }
+
+  @include it("should be gray with w+b at 50%") {
+  	@include should( expect( hwb(30, 50%, 50%) ), to( be( #7f7f7f ) ) );
+  }
+
+  @include it("should be gray with w+b at 60%") {
+  	@include should( expect( hwb(30, 60%, 60%) ), to( be( #7f7f7f ) ) );
+  }
+
+  @include it("should be gray with w+b at 70%") {
+  	@include should( expect( hwb(30, 70%, 70%) ), to( be( #7f7f7f ) ) );
+  }
 }
