@@ -1,7 +1,7 @@
 sass-hwb
 ========
 
-A Sass function for the HWB color model
+A Sass function for the HWB color model [![Build Status](https://travis-ci.org/ddprrt/sass-hwb.svg)](https://travis-ci.org/ddprrt/sass-hwb)
 
 ## Introduction
 

@@ -1,0 +1,9 @@
+@include describe("sass-hwb") {
+  @include it("should convert hwba to rgba") {
+    @include should( expect( hwba(90deg, 0, 0, 0.5) ), to( be( rgba(127, 255, 0, 0.5) ) ) );
+  }
+
+  @include it("should convert hwb to hex") {
+    @include should( expect( hwb(190deg, 0.5, 0) ), to( be( #7fe9ff ) ) );
+  }
+}
