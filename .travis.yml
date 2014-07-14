@@ -1,0 +1,5 @@
+before_script:
+  - npm install
+  - npm install grunt-cli -g
+  - gem install sass -v 3.3.9
+script: grunt test
