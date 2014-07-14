@@ -23,7 +23,9 @@
   @if(unit($k) == "%") {
     $k: $k / 100%;
   }
-  $hue: $hue / 1deg;
+  @if(unit($hue) == "deg") {
+    $hue: $hue / 1deg; 
+  }
   $hue: ($hue % 360) / 360 * 6;
   $t2: 1;
   $t1: 0;
