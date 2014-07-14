@@ -1,0 +1,16 @@
+{
+  "name": "sass-hwb",
+  "version": "0.0.1",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "bootcamp": "^1.1.6",
+    "grunt-contrib-sass": "^0.7.3",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-init": "^0.3.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ddprrt/sass-hwb.git"
+  },
+  "homepage": "https://github.com/ddprrt/sass-hwb"
+}
