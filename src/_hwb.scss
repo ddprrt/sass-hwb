@@ -1,6 +1,6 @@
 @function xx-applyWB($col, $w, $b) {
   $col: $col / 255;
-  @return floor(($col * (1 - $w - $b) + $w) * 255);
+  @return round(($col * (1 - $w - $b) + $w) * 255);
 }
 
 @function hwb($hue, $w, $b) {

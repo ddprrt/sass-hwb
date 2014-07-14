@@ -8,6 +8,9 @@
     "grunt-contrib-watch": "^0.6.1",
     "grunt-init": "^0.3.2"
   },
+  "scripts": {
+    "test": "grunt test"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/ddprrt/sass-hwb.git"
