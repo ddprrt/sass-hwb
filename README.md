@@ -25,9 +25,9 @@ And start using it:
 
 ```
 body {
-	// results in rgba(127, 255, 0, 0.5)
+	// results in rgba(128, 255, 0, 0.5)
 	background-color: hwba(90deg, 0, 0, 0.5);
-	// results in #7fe9ff
+	// results in #80e9ff
 	color: hwb(190deg, 0.5, 0);
 }
 ```
