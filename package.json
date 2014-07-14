@@ -1,6 +1,6 @@
 {
   "name": "sass-hwb",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "devDependencies": {
     "grunt": "^0.4.5",
     "bootcamp": "^1.1.6",
