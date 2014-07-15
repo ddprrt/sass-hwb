@@ -1,0 +1,5 @@
+{
+  "name": "sass-hwb",
+  "description": "A Sass function for the HWB color model",
+  "tags": ["colors", "color", "hwb", "conversion"]
+}
